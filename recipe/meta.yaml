@@ -1,6 +1,6 @@
 {% set name = "opensesame" %}
 {% set pypiname = "python-" + name %}
-{% set version = "3.3.0a70" %}
+{% set version = "3.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ pypiname[0] }}/{{ pypiname }}/{{ pypiname }}-{{ version }}.tar.gz"
-  sha256: "dc42326a5a62aa1bd36bd54c5e51396975b3f295d0e7fe678229ea85b0bed0ff"
+  sha256: "53366dc2f9140f8c1ab56377b6046099434f7617c3d71ad7e089e39047961e6d"
 
 build:
   noarch: python
@@ -17,6 +17,8 @@ build:
   entry_points:
     - opensesame = libqtopensesame.__main__:opensesame
     - opensesamerun = libqtopensesame.__main__:opensesamerun
+  ignore_run_exports:
+    - python_abi
 
 requirements:
   host:
