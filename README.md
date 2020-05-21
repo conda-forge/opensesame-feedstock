@@ -3,7 +3,7 @@ About opensesame
 
 Home: https://github.com/smathot/OpenSesame
 
-Package license: GPLv3
+Package license: GPL-3.0-or-later
 
 Feedstock license: BSD 3-Clause
 
