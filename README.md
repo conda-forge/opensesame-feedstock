@@ -5,11 +5,13 @@ Home: https://github.com/smathot/OpenSesame
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/opensesame-feedstock/blob/master/LICENSE.txt)
 
 Summary: Graphical experiment builder for the social sciences
 
+Development: https://github.com/smathot/OpenSesame
 
+Documentation: http://osdoc.cogsci.nl
 
 Current build status
 ====================
