@@ -1,6 +1,6 @@
 {% set name = "opensesame" %}
 {% set pypiname = "python-" + name %}
-{% set version = "3.3.6" %}
+{% set version = "3.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ pypiname[0] }}/{{ pypiname }}/{{ pypiname }}-{{ version }}.tar.gz
-  sha256: 54dba5d57698d9309e0869ab6366fa7f15c33ec4374bdcee05be70084de987cf
+  sha256: 2fd8fcb8bae15478537d38379f25330fd7a7523a40242a74efa3a6ad2c58447c
 
 build:
   noarch: python
