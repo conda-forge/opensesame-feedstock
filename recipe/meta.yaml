@@ -22,12 +22,12 @@ requirements:
   host:
     - pyyaml
     - pip
-    - python
+    - python >=3.6
 
   run:
-    - python
+    - python >=3.6
     - pyqt
-    - qdatamatrix >=0.1.21
+    - qdatamatrix >=0.1.30
     - pseudorandom
     - fileinspector
     - qnotifications >=2.0.3
@@ -38,8 +38,8 @@ requirements:
     - pyflakes
     - shapely
     - pillow
-    - pyqode.core
-    - pyqode.python
+    - pyqode.core >=3.2.5
+    - pyqode.python >=3.2.3
 
 test:
   imports:
