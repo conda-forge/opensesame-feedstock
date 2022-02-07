@@ -22,10 +22,10 @@ requirements:
   host:
     - pyyaml
     - pip
-    - python
+    - python >=3.6
 
   run:
-    - python
+    - python >=3.6
     - pyqt
     - qdatamatrix >=0.1.21
     - pseudorandom
