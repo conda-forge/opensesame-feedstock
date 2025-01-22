@@ -7,13 +7,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ pypiname[0] }}/{{ pypiname }}/{{ pypiname }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ pypiname[0] }}/{{ pypiname }}/{{ pypiname }}-{{ version }}.tar.gz
   sha256: 0fed32278c6f2099d1dff32436dc1b6387d6aa8c12cf97ad8a28e35d33f79de3
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 0
+  number: 1
   entry_points:
     - opensesame = libqtopensesame.__main__:opensesame
     - opensesamerun = libqtopensesame.__main__:opensesamerun
@@ -22,10 +22,10 @@ requirements:
   host:
     - pyyaml
     - pip
-    - python >=3.6
+    - python {{ python_min }}
 
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - pyqt
     - qdatamatrix >=0.1.21
     - pseudorandom
@@ -42,6 +42,8 @@ requirements:
     - pyqode.python
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - libopensesame
     - libqtopensesame
